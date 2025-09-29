@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onewheel Battery</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/images/home/logo.png">
+</head>
+<body style="background-color:#2a2c33">
+
+    <!-- Start of header.html -->
+    <head>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+         $(function() {
+            $("#includeHtml").load("header.html");
+         });
+      </script>
+    </head>
+
+    <div id="includeHtml"></div>
+    <!-- End Header -->
+
+    <div class="content">
+      
+    <h1 style="text-align: center;"> OneWheel</h1>
+
+    <!-- Start images and text -->
+
+
+    <div class="container">
+      <!-- Each section with alternating image and text layout -->
+
+      <!-- Intro -->
+      <section>
+          <img src="/images/projects/onewheel/IMG_6606.jpg" alt="Intro" class="images" style="float: left;">
+          <p class="about-text">After buying my first Onewheel, a Onewheel Pint in 2022, 
+            I slowly learned that I wanted more range. The Onewheel Pint delivers plenty of
+            torque but has a limited range of 7 miles. Onewheels with larger range, Onewheel 
+            XR and GT, cost over $2000. To create a cheaper long-range board, I decided I wanted
+            to purchase a used Onewheel Plus due to its low cost, larger size, and most 
+            importantly, ability to be easily modified.
+          </p>
+      </section>
+
+      <!-- First Taken Apart -->
+      <section>
+        <img src="/images/projects/onewheel/old/IMG_5282.jpg" alt="Taken Apart" class="images" style="float: right;">
+        <p class="about-text">I found a Onewheel Plus on Facebook Marketplace for $550
+          that included an extra external battery. Since it had an external battery, I had no
+          doubt that its power source could be modified. I needed a Onewheel that would 
+          operate as long as the controller received the correct voltage but did not require
+          any communication between motor controller and BMS. The Onewheel Plus is only the 
+          second board made by Future Motion and thus did not require any communication
+          between these two devices.
+        </p>
+      </section>
+
+      <!-- Problems -->
+      <section>
+        <img src="/images/projects/onewheel/old/IMG_5284.jpg" alt="Problems" class="images" style="float: left;">
+        <p class="about-text">
+          Soon after buying this board, as any engineer might do, I took it apart. 
+          The seller told me that the main battery in the board was not working and he 
+          had added an extra external battery. So the Onewheel did work when I bought it, 
+          but only with the external battery. The seller had supplied an additional Onewheel 
+          battery to replace the current one. This was why I took it apart.
+        </p>
+        <p class="about-text">
+          After swapping the batteries, I found that the battery was not the cause of the 
+          need for the external battery. After another deconstruction and some research,
+          I found that the BMS was probably the cause of my problem. This led me to a 
+          more immediate battery build.
+        </p>
+      </section>
+
+      <!-- First Design -->
+      <section>
+        <img src="/images/projects/onewheel/old/IMG_5350.jpg" alt="Pack1" class="images" style="float: right;">
+        <p class="about-text">
+          To build a cheap, performant battery, I sourced some INR21700M50LT cells from <a href="https://www.batteryhookup.com" target="_blank">Battery Hookup</a>
+          for about $1.70 per cell. These are 5000 mAh 14.4A max discharge cells. My goal was to build a 14s3p pack allowing 
+          for a max current of 43.2A. I purchased a 100A smart Bluetooth BMS to manage the pack. This pack was 756Wh or 15Ah 
+          up from the stock 2.6Ah. 
+        </p>
+      </section>
+
+      <section>
+        <img src="/images/projects/onewheel/old/IMG_5391.JPG" alt="BMS location" class="images" style="float: left;">
+        <p class="about-text">
+          Unfortunately, this pack could not fit inside the normal battery compartment even with my custom 3D printed 
+          Battery box and aftermarket rear bumper from <a href="https://www.thefloatlife.com" target="_blank">The Float Life</a>.
+          To accommodate this large pack, I placed the BMS on top of the box and made the foot pad go over it, making 
+          the rear foot pad higher than the front.
+        </p>
+      </section>
+
+      <section>
+        <img src="/images/projects/onewheel/old/IMG_5396.jpg" alt="Fail" class="images" style="float: right;">
+        <p class="about-text">
+          This pack came to a halt when one cell hit its bottom voltage of 2.5V when the rest were still around 3.7V.
+          At its worst, along with some bad BMS configurations, this caused the board to give out long before it should 
+          have, while moving 20mph.
+        </p>
+      </section>
+      
+      <section>
+        <p class="about-text">
+          I later built a 14s2p pack with P42A cells which are 4200mAh and 45A Max discharge. I also used two 
+          different BMS's and redesigned my battery box to accomdate the battery and the BMS along with a stronger
+          over all design.
+          More Information on this design coming soon...
+        </p>
+      </section>
+  
+      </div>
+  
+  
+      <!--Start of Footer.html-->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+          $(function() {
+              $("#footer").load("footer.html");
+          });
+        </script>
+  
+      <div id="footer"></div>
+      <!--End of Footer-->
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onewheel Battery</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/images/home/logo.png">
+
+</head>
+<body style="background-color:#adb0b8">
+
+    <!--Start of header.html-->
+    <head>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+         $(function() {
+            $("#includeHtml").load("header.html");
+            $("#footer").load("footer.html");
+         });
+      </script>
+    </head>
+
+    <div id="includeHtml"></div>
+    <!--End Header-->
+
+    <h1 style="text-align: center;"> Voron 0.2</h1>
+
+    <div class="container">
+        <!-- Each section with alternating image and text layout -->
+  
+        <!--Intro-->
+        <section>
+            <img src="/images/projects/voron/IMG_7592.jpg" alt="Intro" class="images" style="float: left;">
+            <p class="about-text">Over Winter Break I built Voron 0.2 3D Printer. This page will show what I 
+                have learned through that process
+                More coming soon...
+            </p>
+        </section>
+
+        <video width="350" height="600" controls>
+            <source src="/images/projects/voron/IMG_7636.MOV" type="video/mp4" class="video">
+            Your browser does not support the video tag.
+        </video>
+
+    <!--footer location-->
+    <div id="footer"></div>
+</body>
+</html>
