@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Demo Website</title>
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Demo Website</h1>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <head>
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Micaiah Landis</title>
+    </head>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>This is a very simple demo website created with HTML. It shows how to structure a basic webpage.</p>
-    </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>Project One</li>
-        <li>Project Two</li>
-        <li>Project Three</li>
-      </ul>
-    </section>
+<body style="background-color:#2a2c33">
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at <a href="mailto:demo@example.com">demo@example.com</a>.</p>
-    </section>
-  </main>
+  <!--Detect device-->
+  <script>
+    // JavaScript function to detect if the user is using a mobile device
+    function isMobileDevice() {
+        // Check if the user agent string contains any common mobile keywords
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
 
-  <footer>
-    <p>© 2025 My Demo Website</p>
-  </footer>
+    // Example usage: check if the user is on a mobile device and redirect if necessary
+    if (isMobileDevice()) {
+        // Redirect to mobile_index.html if the user is on a mobile device
+        window.location.href = 'index_mobile.html';
+    }
+  </script>
+
+
+    <!--Start of header.html-->
+    <head>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+         $(function() {
+          $("#includeHtml").load("header.html");
+         });
+      </script>
+    </head>
+
+    <div id="includeHtml"></div>
+    <!--End of Header-->
+
+
+    <!--Main Site-->
+    <div class="content">
+    <div class="container">
+        <section>
+         
+            <!--Start of Grid-->
+            <div class="grid-container">
+            
+            <!--Profile Photo-->
+            <div class="grid-item"><img src="/images/home/profile.JPG" alt="Profile Picture" class="profile-img"></div>
+
+            <!--Main Text-->
+            <div class="grid-item"><p>I am a student at Eastern Mennonite 
+            University pursuing my BS in Engineering. At EMU I am a member of our 
+            Shell Eco Marathon team
+            as well as first chair cellist of the EMU Chamber Orchestra.</p>
+
+            <p>I enjoy designing, modding and optimizing 3D printing and have two printers including a voron I built. 
+            I am expierenced building Li-ion Battery packs for varius electrical devices and desiging 
+            custom PCB's for small electrical uses. All of these I go into depth on in the 
+            <a href="projects.html">projects page</a>.</p>
+            </div>
+            <div class="grid-item">
+            <p>Summer of 2024 I worked for JZ Engineering as an intern inspecting bridges.
+              Since 2015 JZ Engineering has partnered with Mennonite Disaster Service and
+               West Virginia Voad to design and build residential bridges in places in need.
+               My job was to travel around West Virginia and inspect the bridges that 
+               were built 5-9 years ago, specifcally looking at corrosion and wood wear on the bridges.
+            </p>
+            </div>
+            <div class="grid-item">
+              <p>
+                Before I enrolled at Eastern Mennonite University I spent almost my entire life in Croghan 
+                NY. To fill my time in Croghan I often roamed the outdoors, helping my father on house and 
+                barn projects. For several years we had several goats and many chickens that were treated more as pets
+                 than farm animals. As I transitioned into high school my parents bought a new property 
+                 with over 100 acres.  
+              </p>
+            </div>
+            </div>
+            <div class="grid-item">
+              <p>
+                With endless opportunities my dad and I spent lots of time in our woods
+                  making trails and caring for trees. Evolving from this we started collecting sap from 
+                  maple trees in the spring months to make maple syrup. This became one of my favorite 
+                  activities, combining being outside with my family and friends with the process of tapping 
+                  maple trees, collecting sap and boiling it into syrup.
+              </p>
+              <p>
+                Several summers in highschool and college I worked for a local heating and air conditioning
+                 contractor helping on installs and maintenance. This gave me valuable experience in the 
+                 workforce and how to effectively work with coworkers. In college I worked alongside my father
+                  in his solar contracting business installing solar units and upgrading aging systems. 
+                  I learned a lot about both AC and DC power and how solar systems work from the physical 
+                  panels to battery charge controllers, Inverters and grid tied power managers.  
+              </p>
+            </div>
+            
+            <!--Start of Footer.html-->
+              <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+              <script>
+                $(function() {
+                   $("#footer").load("footer.html");
+                });
+              </script>
+
+            <div id="footer"></div>
+            <!--End of Footer-->
+
+        </section>
+    </div>
+    </div>
+
 </body>
 </html>
