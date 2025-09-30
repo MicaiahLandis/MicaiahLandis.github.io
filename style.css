@@ -3,181 +3,154 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
      
-  /* Top Bar */
-  header {
+/* Top Bar */
+header {
     background-color: #2f6662;
-    color: #fff;
+    color: #0f0e0e;
     padding: 20px;
     text-align: center;
-  }
+}
           
-  /* Top Bar Buttons */
-  nav {
+/* Top Bar Buttons */
+nav {
     text-align: center;
     margin-top: 20px;
     padding: 5px 10px;
     margin-bottom: 5px;
-  }
-  
-  /* Top Bar Buttons */
-  nav a {
+}
+
+/* Top Bar Buttons */
+nav a {
     text-decoration: none;
     color: #fff;
-    background-color: #333;
+    background-color: #afafaf;
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0 10px;
-  }
-  
-  /* Top Bar Buttons when Curser is on top */
-  nav a:hover {
-    background-color: #142340;
-  }
-  
-  /* Logo Image */
-  .logo {
+}
+
+/* Top Bar Buttons when Curser is on top 
+nav a:hover {
+    background-color: #000000;
+}
+*/
+
+/* Logo Image */
+.logo {
     position: absolute;
     top: 40px;
     left: 20px;
     height: 100px; /* Adjust based on your logo's size */
     
-  }
-  
-  /* Hide the image by default */
-  .responsive-image {
+}
+
+/* Hide the image by default */
+.responsive-image {
     display: none;
-  }
-  
-  /* Media query for screens wider than 800px */
-  @media (min-width: 800px) {
+}
+
+/* Media query for screens wider than 800px */
+@media (min-width: 800px) {
     .responsive-image {
         display: block; /* Show the image when the condition is met */
     }
-  }
-  
-  
-  .container {
+}
+
+.container {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
-  }
-  
-  /* Profile Image Options */
-  .profile-img {
+}
+
+/* Profile Image Options */
+.profile-img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    border: 5px solid #2f6662;
-  }
-  
-  .images {
+    border: 5px solid #103c60;
+}
+
+.images {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    border: 5px solid #2f6662;
+    border: 5px solid #103c60;
     height: 400px;
     margin-right: 10px;
     width: 50%;
     height: auto;
     margin: 20px;
-  }
-  
-  /* Onewheel Image Option */
-  .onewheel-img {
+}
+
+/* Onewheel Image Option */
+.onewheel-img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
     border: 5px solid #2f6662;
-  }
-  
-  .links {
+}
+
+.links {
     text-align: center;
     margin-top: 10px;
-  }
-  
-  /* Grid Options */
-  .grid-container {
+}
+
+/* Grid Options */
+.grid-container {
     display: grid;
     grid-template-columns: auto auto;
-  }
-  .grid-item {
+}
+.grid-item {
     font-size: 25px;
     text-align: left;
     padding: 1px 10px;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #2f6662;
-    min-width: 200px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 25px;
-  }
-  
-  .dropdown-content a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .dropdown-content a:hover {background-color: #142340;}
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: #3e8e41}
-  
-  .project-text {
+}
+
+
+
+.project-text {
     color: black;
     font-size: 20px;
     text-align: left;
-  }
-  
-  .link-style {
+}
+
+.link-style {
     /*cursor: default;*/
     color: black;
     text-decoration: none;
     font-size: 60px;
     font-family: 'Ubuntu', sans-serif;
-  }
-  
-  section {
+}
+
+section {
     overflow: auto; /* Clears float */
     padding: 20px;
-  }
-  .container {
+}
+.container {
     width: 80%;
     margin: auto;
-  }
-  
-  .about-text {
+}
+
+.about-text {
     font-size: 20px;
-  }
-  
-  .video {
+}
+
+.video {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
-  
-  .content {
+}
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,10 +161,10 @@ body {
     background-color: #afafaf;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-  }
-  
-  
-  .btn-solid {
+}
+
+
+.btn-solid {
     background-color: #1f1f1f;
     color: white;
     padding: 12px 24px;
@@ -201,8 +174,92 @@ body {
     cursor: pointer;
     box-shadow: 0 0 0 rgba(0,0,0,0);
     transition: box-shadow 0.3s ease;
-  }
-  .btn-solid:hover {
+}
+.btn-solid:hover {
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.8);
-  }
-  
+}
+
+/* -------------------------------
+   Bootstrap Navbar Customization
+   ------------------------------- */
+
+/* Use Ubuntu font globally with Bootstrap navbar */
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Bootstrap Navbar Background */
+.navbar {
+    background-color: #103c60; /* match your header color */
+}
+
+/* Logo sizing inside Bootstrap nav */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #fff; /* white text like your old nav */
+    font-weight: 500;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+/* Hover state */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background-color: #142340; /* your hover color */
+    color: #fff;
+}
+
+/* Make hover highlight taller/wider */
+.navbar-nav .dropdown-item {
+    padding: 5px 15px;
+    margin: 0;
+    border-radius: 7px; /* vertical | horizontal */
+    line-height: 1.5;   /* increases vertical space */
+}
+
+/* Ensure dropdown items stay inside the menu */
+.navbar-nav .dropdown-menu {
+    padding: 0;              /* remove extra padding in menu */
+    width: auto;             /* fit the content if you want, or set a fixed width */
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+    background-color: #142340;
+    font-weight: 600;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    background-color: #2f4f66; /* match header */
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* Override Bootstrap default blue links */
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+  color: rgb(255, 255, 255) !important; /* subtle hover/focus effect */
+  text-decoration: underline; /* optional: adds underline on hover */
+}
