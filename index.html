@@ -9,7 +9,6 @@
 
 <!--The following part needs to be on every page that uses header.html-->
 
-
 <!-- Google Font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 
@@ -53,77 +52,74 @@
     <!--End of Header-->
 
 
-    <!--Main Site-->
-    <div class="content">
-    <div class="container">
-        <section>
-         
-            <!--Start of Grid-->
-            <div class="grid-container">
-            
-            <!--Profile Photo-->
-            <div class="grid-item"><img src="/images/home/profile.webp" alt="Profile Picture" class="profile-img"></div>
+    <!-- Main Site -->
+<div class="content py-5">
+  <div class="container">
 
-            <!--Main Text-->
-            <div class="grid-item"><p>I am a recent grad from <a href="https://www.emu.edu" target="_blank">EMU</a> where 
-            earned my BS in engineering with a minor in computer science.
-            </p>
+    <section class="row g-4">
 
-            <p>I enjoy designing, modding and optimizing 3D printing and have two printers including a voron 0.2
-            that I built from a kit. I am expierenced building Li-ion Battery packs for varius electrical devices 
-            and desiging custom PCB's for small electrical uses. All of these I go into depth on in the 
-            <a href="projects.html">projects page</a>.</p>
-            </div>
-            <div class="grid-item">
-            <p>Summer of 2024 I worked for JZ Engineering as an intern inspecting bridges.
-              Since 2015 JZ Engineering has partnered with <a href="https://www.mds.org" target="_blank">Mennonite Disaster Service</a> and
-               West Virginia Voad to design and build residential bridges in places in need.
-               My job was to travel around West Virginia and inspect the bridges that 
-               were built 5-9 years ago, specifcally looking at corrosion and wood wear on the bridges.
-            </p>
-            </div>
-            <div class="grid-item">
-              <p>
-                Before I enrolled at Eastern Mennonite University I spent almost my entire life in Croghan 
-                NY. To fill my time in Croghan I often roamed the outdoors, helping my father on house and 
-                barn projects. For several years we had several goats and many chickens that were treated more as pets
-                 than farm animals. As I transitioned into high school my parents bought a new property 
-                 with over 100 acres.  
-              </p>
-            </div>
-            </div>
-            <div class="grid-item">
-              <p>
-                With endless opportunities my dad and I spent lots of time in our woods
-                  making trails and caring for trees. Evolving from this we started collecting sap from 
-                  maple trees in the spring months to make maple syrup. This became one of my favorite 
-                  activities, combining being outside with my family and friends with the process of tapping 
-                  maple trees, collecting sap and boiling it into syrup.
-              </p>
-              <p>
-                Several summers in highschool and college I worked for a local heating and air conditioning
-                 contractor helping on installs and maintenance. This gave me valuable experience in the 
-                 workforce and how to effectively work with coworkers. In college I worked alongside my father
-                  in his solar contracting business installing solar units and upgrading aging systems. 
-                  I learned a lot about both AC and DC power and how solar systems work from the physical 
-                  panels to battery charge controllers, Inverters and grid tied power managers.  
-              </p>
-            </div>
-            
-            <!--Start of Footer.html-->
-              <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-              <script>
-                $(function() {
-                   $("#footer").load("footer.html");
-                });
-              </script>
+      <!-- Profile Photo -->
+      <div class="col-12 col-md-4 text-center">
+        <img src="/images/home/profile.webp" alt="Profile Picture" class="img-fluid rounded profile-img">
+      </div>
 
-            <div id="footer"></div>
-            <!--End of Footer-->
+      <!-- Main Text -->
+      <div class="col-12 col-md-8">
+        <h1>Hi, my name is Micaiah</h1>
+        <p>I am a mechanical EIT interested in clean energy, effecient tranportation and optimization of common systems. 
+          I am proficient in several engineering software apps including: AutoCAD, Autodesk Inventor and Solidworks.
+        </p>
+        <p>In my free time I enjoy designing, modding and optimizing 3D printing. My favorite printer I own is a 
+          <a href="https://vorondesign.com/voron0.2" target="_blank" >Voron 0.2</a> I built from a kit. Since it's an open 
+          source project I am constantly improving and optimizing different parts. I am experienced building Li-ion battery
+          packs for various electrical devices and designing custom PCBs for smallelectrical uses. All of these I go into 
+          depth on in the <a href="projects.html">projects page</a>.</p>
+      </div>
 
-        </section>
-    </div>
-    </div>
+      <!-- Internship Experience -->
+      <div class="col-12">
+        <p>Summer of 2024 I worked for <a href="https://jzengr.com" target="_blank">JZ Engineering</a> as an engineering 
+          intern inspecting bridges. Since 2015 JZ Engineering has partnered with 
+          <a href="https://www.mds.org" target="_blank">Mennonite Disaster Service</a> and 
+          <a href="https://www.wvvoad.org/" target="_blank">West Virginia VOAD</a> to design and build residential bridges
+          in natural disaster sites. My job was to travel throughout West Virginia and inspect the bridges that were built 
+          5-9 years ago, specifically looking at corrosion and wood wear on the bridges.</p>
+      </div>
+
+      <!-- Childhood Background -->
+      <div class="col-12">
+        <p>Before I enrolled at Eastern Mennonite University I spent almost my entire life in Croghan NY. To fill my time
+          in Croghan I often roamed the outdoors, helping my father on house and barn projects. As I transitioned into 
+          high school my parents bought a new property with over 100 acres.</p>
+      </div>
+
+      <!-- Maple Syrup & Outdoor Activities -->
+      <div class="col-12">
+        <p>With endless opportunities my dad and I spent lots of time in our woods making trails and caring for trees. 
+          Evolving from this we started collecting sap from maple trees in the spring months to make maple syrup. This 
+          became one of my favorite activities, combining being outside with my family and friends with the process of 
+          tapping maple trees, collecting sap and boiling it into syrup.</p>
+        <p>Several summers in high school and college I worked for a local heating and air conditioning contractor 
+          helping on installs and maintenance. This gave me valuable experience in the workforce and how to effectively 
+          work with coworkers. In my college years I worked alongside my father in his solar contracting business installing 
+          solar units and upgrading aging systems. I learned a lot about both AC and DC power and how solar systems 
+          work from the physical panels to battery charge controllers, inverters, and grid-tied power managers.</p>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      $(function() {
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+  </div>
+</div>
+
 
 </body>
 </html>
