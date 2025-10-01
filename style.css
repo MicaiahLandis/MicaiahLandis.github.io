@@ -190,14 +190,36 @@ body {
 
 /* Bootstrap Navbar Background */
 .navbar {
+    padding-top: 0.4rem;   /* smaller top padding */
+    padding-bottom: 0.4rem; /* smaller bottom padding */
     background-color: #103c60; /* match your header color */
 }
 
-/* Logo sizing inside Bootstrap nav */
+
+/* Default (mobile/small screens) */
 .navbar-brand img {
-    height: 40px;
-    width: auto;
+  height: 25px;
 }
+.navbar-brand span {
+  font-size: 1rem;
+}
+
+/* Larger screens (lg and up, ≥992px) */
+@media (min-width: 992px) {
+  .navbar-brand img {
+    height: 50px;
+  }
+  .navbar-brand span {
+    font-size: 1.5rem;
+  }
+}
+
+/* Adjusts padding on sides of header*/
+.navbar .container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 /* Navbar Links */
 .navbar-nav .nav-link {
