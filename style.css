@@ -233,4 +233,54 @@ a:focus {
   color: #000000; /* purple text only on projects page */
 }
 
+/* specific project pages */
+
+/* Scope everything to .project-page so it won’t affect global styles */
+.project-page {
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Reusable main text color class */
+.project-text {
+  color: #e0e0e0;
+}
+
+/* Card styling */
+.project-page .project-card {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  margin-bottom: 2rem;
+}
+
+.project-page .project-card img {
+  border-radius: 12px 12px 0 0;
+}
+
+.project-page .card-title {
+  color: #fff;
+}
+
+/* Images */
+.project-page .project-image {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* Links */
+.project-page a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+.project-page a:hover {
+  color: #99ccff;
+  text-decoration: underline;
+}
+
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="../style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Micaiah Landis</title>
+      </head>
+
+
+<!--The following part needs to be on every page that uses header.html-->
+
+<!-- Google Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Your Custom Styles -->
+<link rel="stylesheet" href="../style.css">
+
+<!--^Header bootstrap stuff^-->
+
+<!--Start of header.html-->
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+        $("#includeHtml").load("../header.html");
+        });
+    </script>
+</head>
+
+<div id="includeHtml"></div>
+<!--End of Header-->
+
+<!--Background color change-->
+<body style="background-color:#57575a"></body>
+<!--Used for footer color change-->
+<body class="projects-page">
+
+    <!-- Project Page Content -->
+  <div class="project-page container mt-5">
+    <div class="card project-card">
+      <div class="card-body">
+        <h2 class="card-title">Double Inverted Pendulum</h2>
+        <p class="project-text" style="text-indent: 2em;">
+          The main constraint of this project was to build the inverted pendulum system at a total cost of $500, 
+          while creating a robust system that will continue to be used for future control system classes and research. 
+          After calculating system accuracy requirements, mechanical and electrical components were found to match 
+          the specifications. A full CAD (Computer Aided Design)  assembly was modeled using Solidworks 
+          and engineering drawings created for individual parts. The subsections of the system are the steel base, 
+          linear guide system, motor and belt drive, pendulum arms and pivots, and electronics and sensors. After 
+          procuring materials and components, the individual parts were manufactured using 3D printing, machining, 
+          and welding. The final design allows for the system to be used as a single and double inverted pendulum 
+          without removing any parts.
+          </p>
+          <p class="project-text" style="text-indent: 2em;">
+          A framework for an Arduino based PID controller was developed using ChatGPT, with separate PIDs for each 
+          controlled motion. PID controller outputs, encoder angles and time were collected to create graphs for 
+          tuning purposes. The encoders are calibrated by aligning the arms in a vertical position with the Arduino 
+          reading and storing the position. Safety limits are programmed that if a cart position or angle threshold 
+          is exceeded, the motor is disabled.
+          </p>
+          <p class="project-text" style="text-indent: 2em;">
+          The controller that balances the first beam was tuned using Ziegler Nichols method2. This was done by 
+          increasing the proportional constant until the system reached continuous oscillation, with the period 
+          of oscillation and required proportional constant then used to calculate values for P, I and D. In order 
+          to tune the PID controller that centers the cart, the graphs of system and controller data were analyzed 
+          to determine values for P, I and D. The proportional constant was increased until the system responded 
+          quickly to error. The derivative constant was added to remove overshoot, and a small amount of integral 
+          was added to reduce steady state error.
+
+        </p>
+
+        <p class="project-text" style="text-indent: 2em;">
+            A double inverted pendulum system was designed and constructed for a cost slightly over $500.
+             A controller was successfully programmed and tuned to balance a single inverted pendulum. 
+             The controller proved successful at handling small disturbances, removing a human caused force input 
+             to the arm in less than two seconds. At point A in the graph below, the pendulum arm is given
+              a slight push causing it to deflect. This causes the cart and arm PID controllers to ramp up their 
+              outputs, leading the cart to move significantly away from the center. The cart movement causes the arm
+               to change its rotational direction at point B, approximately 120 milliseconds after the disturbance 
+               occurred. From here both PID outputs begin to level off and switch directions, with the cart PID 
+               output having a slight lag. Around point C, the PID outputs approach each other, the cart and arm 
+               change directions. The rate at which the cart moves back towards center causes the arm to rotate back
+                toward the upright position in a damped path with slight overshoot. By the time point D is reached,
+                 the signals have mostly converged resulting in near steady state.
+
+        </p>
+        <p class="project-text">
+          See more on EMU's
+          <a href="https://github.com/eastern-mennonite-university/Double_Inverted_Pendulum/tree/main">github</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- More images -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="../images/projects/invpendulum.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 1">
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/pendulum/acefest.webp">
+            <img src="../images/projects/pendulum/acefest.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 2">
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/pendulum/invpendpost.webp">
+            <img src="../images/projects/pendulum/invpendpost.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 2"></a>
+      </div>
+    </div>
+  </div>
+
+
+<!--Start of Footer.html-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(function() {
+    $("#footer").load("../footer.html");
+});
+</script>
+
+<div id="footer"></div>
+<!--End of Footer-->
+
+
+</html>
+
+<!-- Bootstrap JS (required for dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
