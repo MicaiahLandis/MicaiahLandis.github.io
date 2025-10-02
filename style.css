@@ -123,7 +123,7 @@ body {
 .navbar {
     padding-top: 0.4rem;   /* smaller top padding */
     padding-bottom: 0.4rem; /* smaller bottom padding */
-    background-color: #103c60; /* match your header color */
+    background-color: #103c60; /* match your header color CHANGES HEADER COLOR*/
 }
 
 
@@ -216,3 +216,21 @@ a:focus {
   color: rgb(255, 255, 255) !important; /* subtle hover/focus effect */
   text-decoration: underline; /* optional: adds underline on hover */
 }
+
+
+/* Projects page */
+
+.project-page-title {
+  color: #c5c5c5; /* deep purple */
+}
+
+
+.project-card h5 {
+  color: #103c60; /* deep purple */
+}
+
+.projects-page #footer {
+  color: #000000; /* purple text only on projects page */
+}
+
+

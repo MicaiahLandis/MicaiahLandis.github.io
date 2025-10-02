@@ -21,103 +21,124 @@
 
 <!--^Header bootstrap stuff^-->
 
-<body>
-  <!--Start of header.html-->
-  <head>
-      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script>
-          $(function() {
-          $("#includeHtml").load("header.html");
-          });
-      </script>
-    </head>
-
-    <div id="includeHtml"></div>
-    <!--End of Header-->
-
-    <!--Project 1-->
-    <div class="content">
-      <h3>OneWheel - Battery and box - VESC - Little Focer v3.1</h3>
-      <div class="grid-container">
-        <div class="container">
-          <section>
-            <img src="/images/projects/onewheel/After_vesc.jpg" alt="Ollie_the_onewheel_2024" class="images" style="float: right;">
-
-            <p>-Built a 14s2p battery with p42A cells</p>
-            <p>-Designed and 3d Printed a battery box to maximize availabe space</p>
-            <p>-Installed a little Focer 3.1 with VESC software</p>
-
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <!--Project 2-->
-
-    <div class="content">
-      <h3>Honda Insight IMA Charger</h3>
-      <div class="container">
-        <section>
-          <img src="/images/projects/Insightcharger/assembly.png" alt="Insight_charger_model" class="images" style="float: right;">
-
-          <p>-Designed a battery charger for the 177V IMA battery
-            of the gen 1 Honda insight
-          </p>
-          <p>-Used AC to DC voltage converters for the high voltage and a 12V Fan
-          </p>
-          <p>-Designed a 3d printed box with active cooling on the voltage converters.</p>
-
-          <p>-Read a more in-depth description of this project with links to the parts I
-            used and the all of the CAD models on GitHub.
-          </p>
-
-          <button onclick="https://github.com/MicaiahLandis/HondaInsightCharger" target="_blank" class="btn-solid">Insight Charger GitHub</button>
-
-        </section>
-      </div>
-    </div>
-
-
-    <!--Project 3-->
-
-    <div class="content">
-      <h3>Voron build and mods</h3>
-      <div class="container">
-        <section>
-          <img src="/images/projects/voron/72739539587__E12D577C-FCC4-450F-A7EA-43B0BD8CB186.jpg" alt="Voron0.2" class="images" style="float: right;">
-
-          <p>-Voron 0.2 build from kit
-          </p>
-          <p>-I originally built this printer to learn about the process with the goal 
-            of designing and building my own larger form-facter printer (1m^3). I quickly 
-            realized I would have enought to do with just modding this one. At least
-              while in school.
-          </p>
-          <p>-upgraded to dragon burner toolhead
-          </p>
-          <p>-CANbus communication to toolhead.</p>
-
-        </section>
-      </div>
-    </div>
-
-    <div class="content">
-    <h3>More updated projects on my <a href="https://github.com/MicaiahLandis" target="_blank"> GitHub</a></h3>
-
-
-
-
-    <!--Start of Footer.html-->
+<!--Start of header.html-->
+<head>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
-      $(function() {
-          $("#footer").load("footer.html");
-      });
+        $(function() {
+        $("#includeHtml").load("header.html");
+        });
     </script>
+</head>
 
-  <div id="footer"></div>
-  <!--End of Footer-->
+<div id="includeHtml"></div>
+<!--End of Header-->
+
+<!--Used for footer color change-->
+<body class="projects-page">
+
+
+<body style="background-color:#2a2c33"></body>
+
+<div class="container py-5">
+  <h1 class="text-center mb-5 project-page-title">Some of my Favorite Projects...</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!--Project Card 1-->
+    <div class="col">
+        <a href="#" class="project-card"> <!--Linkes card to project page-->
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="images/projects/invpendulum.webp" class="card-img-top rounded" alt="Project 1">
+                <div class="card-body">
+                <h5>Single Inverted Pendulum</h5>
+                <p>With a few other EMU students we designed and built a double inverted pendulum, only succeeding
+                    to tune the single.
+                </p>
+                </div>
+            </div>
+        </a>    
+    </div>
+
+    <!--Project Card 2-->
+    <div class="col">
+        <a href="#" class="project-card"> <!--Linkes card to project page-->
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="images/projects/planetarium.webp" class="card-img-top rounded" alt="Project 1">
+                <div class="card-body">
+                <h5>EMU Planetarium Upgrade</h5>
+                <p>As an Engineering Capstone project I was part of a team of engineering students reviving 
+                    the 1968 Spitz planetarium projector.
+                </p>
+                </div>
+            </div>
+        </a>    
+    </div>
+
+    <!--Project Card 3-->
+    <div class="col">
+        <a href="#" class="project-card"> <!--Linkes card to project page-->
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="images/projects/van.webp" class="card-img-top rounded" alt="Project 1">
+                <div class="card-body">
+                <h5>Work van to Camper Van</h5>
+                <p>For many years I have drempt of building a camper van when this oppurtunity arrose
+                    I could not turn it down.
+                </p>
+                </div>
+            </div>
+        </a>    
+    </div>
+
+    <!--Project Card 4-->
+    <div class="col">
+        <a href="#" class="project-card"> <!--Linkes card to project page-->
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="images/projects/owbatclose.webp" class="card-img-top rounded" alt="Project 1">
+                <div class="card-body">
+                <h5>Onewheel plus >> Full Custom (almost)</h5>
+                <p>For several years now I have been modding my onewheel. I started with a broken Onewheel plus
+                    and step by step made the board of my dreams!
+                </p>
+                </div>
+            </div>
+        </a>    
+    </div>
+
+    <!--Project Card 5-->
+    <div class="col">
+        <a href="#" class="project-card"> <!--Linkes card to project page-->
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="images/projects/voron.webp" class="card-img-top rounded" alt="Project 1">
+                <div class="card-body">
+                <h5>Voron 0.2</h5>
+                <p>Although this is a kit the project never ends. Since the voron is a widely used
+                    kit there are endless possibilites for upgrades.
+                </p>
+                </div>
+            </div>
+        </a>    
+    </div>
+
+
+
   </div>
+</div>
+
+
+
+
+
+<!--Start of Footer.html-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(function() {
+    $("#footer").load("footer.html");
+});
+</script>
+
+<div id="footer"></div>
+<!--End of Footer-->
+
 
 </html>
 
