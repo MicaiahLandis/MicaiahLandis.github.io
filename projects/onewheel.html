@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onewheel Battery</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="/images/home/logo.png">
-</head>
+    <head>
+        <link href="../style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Micaiah Landis</title>
+      </head>
+
 
 <!--The following part needs to be on every page that uses header.html-->
 
@@ -17,133 +17,124 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Your Custom Styles -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 <!--^Header bootstrap stuff^-->
 
-<body style="background-color:#2a2c33">
+<!--Start of header.html-->
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+        $("#includeHtml").load("../header.html");
+        });
+    </script>
+</head>
 
-    <!-- Start of header.html -->
-    <head>
-      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script>
-         $(function() {
-            $("#includeHtml").load("header.html");
-         });
-      </script>
-    </head>
+<div id="includeHtml"></div>
+<!--End of Header-->
 
-    <div id="includeHtml"></div>
-    <!-- End Header -->
+<!--Background color change-->
+<body style="background-color:#57575a"></body>
+<!--Used for footer color change-->
+<body class="projects-page">
 
-    <div class="content">
-      
-    <h1 style="text-align: center;"> OneWheel</h1>
-
-    <!-- Start images and text -->
-
-
-    <div class="container">
-      <!-- Each section with alternating image and text layout -->
-
-      <!-- Intro -->
-      <section>
-          <img src="/images/projects/onewheel/IMG_6606.jpg" alt="Intro" class="images" style="float: left;">
-          <p class="about-text">After buying my first Onewheel, a Onewheel Pint in 2022, 
-            I slowly learned that I wanted more range. The Onewheel Pint delivers plenty of
-            torque but has a limited range of 7 miles. Onewheels with larger range, Onewheel 
-            XR and GT, cost over $2000. To create a cheaper long-range board, I decided I wanted
-            to purchase a used Onewheel Plus due to its low cost, larger size, and most 
-            importantly, ability to be easily modified.
-          </p>
-      </section>
-
-      <!-- First Taken Apart -->
-      <section>
-        <img src="/images/projects/onewheel/old/IMG_5282.jpg" alt="Taken Apart" class="images" style="float: right;">
-        <p class="about-text">I found a Onewheel Plus on Facebook Marketplace for $550
-          that included an extra external battery. Since it had an external battery, I had no
-          doubt that its power source could be modified. I needed a Onewheel that would 
-          operate as long as the controller received the correct voltage but did not require
-          any communication between motor controller and BMS. The Onewheel Plus is only the 
-          second board made by Future Motion and thus did not require any communication
-          between these two devices.
+    <!-- Project Page Content -->
+  <div class="project-page container mt-5">
+    <div class="card project-card">
+      <div class="card-body">
+        <h2 class="card-title">Onewheel mods and upgrades</h2>
+        <p class="project-text" style="text-indent: 2em;">
+          This project began with my purchase of a partially working Onewheel plus. I was looking for a battery project with the 
+          purchase of this board so was not upset to find thats its BMS was not working. My first goal was to build a battery 
+          that could replace the original battery with upgraded range and equal or more power. 
         </p>
-      </section>
+        <h5 class="card-title">V1</h5>
+        <p class="project-text" style="text-indent: 2em;">
+          My first battery, lets call this v1, was a 14s3p INR21700M50LT pack. I had no expierence building onewheel batteries at 
+          this time and wasfairly disconnected with the aftermarket community. To summarize this battery was a disaster waiting 
+          to happen. In order to fit this many cells in the frame I had to put the BMS on top of the battery box, in the footpad. 
+          The first thing to fail on this build was the welds. I used a cheap battery spot welder and had no prior expierence 
+          building batteries so my connections were weak. 
+        </p>
+        <img src="../images/projects/onewheel/onewheel_v1.webp" class="img-fluid rounded shadow prof" alt="Screenshot 1">
+        <p class="project-text" style="text-indent: 2em;">
+            Since I used a smart BMS on this build I first noticed a cell dropping in voltage much faster than the rest. Once
+            disecting this battery I found several loose welds likely to have caused the cell's voltage drops.
+        </p>
 
-      <!-- Problems -->
-      <section>
-        <img src="/images/projects/onewheel/old/IMG_5284.jpg" alt="Problems" class="images" style="float: left;">
-        <p class="about-text">
-          Soon after buying this board, as any engineer might do, I took it apart. 
-          The seller told me that the main battery in the board was not working and he 
-          had added an extra external battery. So the Onewheel did work when I bought it, 
-          but only with the external battery. The seller had supplied an additional Onewheel 
-          battery to replace the current one. This was why I took it apart.
+        <h5 class="card-title">V2</h5>
+        <p class="project-text" style="text-indent: 2em;">
+          After a bit more research I started planning my next battery build. This was a 14s2p pack using Molicel P42B's. For the 
+          BMS I used a Daly 14s smart bms. I had also upgraded to a Glitter 801D spot welder for much stronger welds. I used 0.2mm 
+          nickel strips for all welds. The first falure of this build was a cell going out of balance. Since it was cell 14, the
+          last in the string I simply replaced that cell. I also swapped my bms to a JBD 12-17s smart BMS for better active balance.
         </p>
-        <p class="about-text">
-          After swapping the batteries, I found that the battery was not the cause of the 
-          need for the external battery. After another deconstruction and some research,
-          I found that the BMS was probably the cause of my problem. This led me to a 
-          more immediate battery build.
+        <img src="../images/projects/onewheel/v2dally.webp" class="img-fluid rounded shadow prof" alt="Screenshot 1">
+        <p class="project-text" style="text-indent: 2em;">
+          The main flaws on this build can be seen in the above picture.
         </p>
-      </section>
 
-      <!-- First Design -->
-      <section>
-        <img src="/images/projects/onewheel/old/IMG_5350.jpg" alt="Pack1" class="images" style="float: right;">
-        <p class="about-text">
-          To build a cheap, performant battery, I sourced some INR21700M50LT cells from <a href="https://www.batteryhookup.com" target="_blank">Battery Hookup</a>
-          for about $1.70 per cell. These are 5000 mAh 14.4A max discharge cells. My goal was to build a 14s3p pack allowing 
-          for a max current of 43.2A. I purchased a 100A smart Bluetooth BMS to manage the pack. This pack was 756Wh or 15Ah 
-          up from the stock 2.6Ah. 
+        <li class="project-text" style="text-indent: 2em;">Easily the biggest mistake was not using any fish paper.</li>
+        <li class="project-text" style="text-indent: 2em;">Weak physical build.</li>
+        <li class="project-text" style="text-indent: 2em;">Poor routing of balance lines.</li>
+        
+        <p class="project-text" style="text-indent: 2em;">
+          Since I was still new to battery building I was not aware of teh importance of fish paper. I placed the cells tight 
+          to each other, using only the welds to bind them until I taped them all together. While this seemed to work it was 
+          difficult to assemble and not prepared for the vigorous vibrations of onewheeling. One of my theories of the cause
+          of v2's second bad cell and ultimate falure was the lack of fish paper. Several cells showed signs of corrosion,
+          and a few had parts where the nickel strips had worn through the battery heat shrink making contact with the metal 
+          of the cell.
         </p>
-      </section>
+        <p class="project-text" style="text-indent: 2em;">
+          Although never proving to cause any problem the balance wires were routed in such a way that they over lapped each
+          other many times. In a tight build like a onewheel this can cause a short over time with many vibrations.
+        </p>
+          
+        
 
-      <section>
-        <img src="/images/projects/onewheel/old/IMG_5391.JPG" alt="BMS location" class="images" style="float: left;">
-        <p class="about-text">
-          Unfortunately, this pack could not fit inside the normal battery compartment even with my custom 3D printed 
-          Battery box and aftermarket rear bumper from <a href="https://www.thefloatlife.com" target="_blank">The Float Life</a>.
-          To accommodate this large pack, I placed the BMS on top of the box and made the foot pad go over it, making 
-          the rear foot pad higher than the front.
+        
+        <!--
+        <div class="col-12 col-md-4 text-center">
+                <img src="/images/about/Family.webp" alt="Landis Family" class="img-fluid rounded profile-img">
+            </div>
+            <div class="col-12 col-md-8">
+        -->
+          
+        <p class="project-text">
+          See more on EMU's
+          <a href="https://github.com/eastern-mennonite-university/Double_Inverted_Pendulum/tree/main">github</a>.
         </p>
-      </section>
-
-      <section>
-        <img src="/images/projects/onewheel/old/IMG_5396.jpg" alt="Fail" class="images" style="float: right;">
-        <p class="about-text">
-          This pack came to a halt when one cell hit its bottom voltage of 2.5V when the rest were still around 3.7V.
-          At its worst, along with some bad BMS configurations, this caused the board to give out long before it should 
-          have, while moving 20mph.
-        </p>
-      </section>
-      
-      <section>
-        <p class="about-text">
-          I later built a 14s2p pack with P42A cells which are 4200mAh and 45A Max discharge. I also used two 
-          different BMS's and redesigned my battery box to accomdate the battery and the BMS along with a stronger
-          over all design.
-          More Information on this design coming soon...
-        </p>
-      </section>
-  
       </div>
-  
-  
-      <!--Start of Footer.html-->
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script>
-          $(function() {
-              $("#footer").load("footer.html");
-          });
-        </script>
-  
-      <div id="footer"></div>
-      <!--End of Footer-->
+    </div>
+
+    <!-- More images -->
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/invpendulum.webp">
+            <img src="../images/projects/onewheel/v2closed.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 1">
+        </a>
+      
+      </div>
+    </div>
   </div>
-  </body>
-  </html>
+
+
+<!--Start of Footer.html-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(function() {
+    $("#footer").load("../footer.html");
+});
+</script>
+
+<div id="footer"></div>
+<!--End of Footer-->
+
+
+</html>
 
 <!-- Bootstrap JS (required for dropdowns) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
