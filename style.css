@@ -283,4 +283,8 @@ a:focus {
   text-decoration: underline;
 }
 
-
+.project-list {
+  list-style-position: outside; /* or 'inside' if you prefer */
+  padding-left: 2em;           /* sets consistent spacing */
+  margin: 0;                   /* remove browser defaults */
+}
