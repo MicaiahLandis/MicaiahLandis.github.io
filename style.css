@@ -286,12 +286,7 @@ a:focus {
 .project-list {
   list-style-position: outside; /* or 'inside' if you prefer */
   padding-left: 1em;           /* sets consistent spacing */
-  margin: 0;                   /* remove browser defaults */
+  margin: 1;                   /* remove browser defaults */
   
-}
-
-.project-list li {
-  padding-left: 0.75em; /* tighter gap */
-  text-indent: -0.25em; /* keep text aligned */
 }
 

@@ -49,11 +49,13 @@
           purchase of this board so was not upset to find thats its BMS was not working. My first goal was to build a battery 
           that could replace the original battery with upgraded range and equal or more power. 
         </p>
+
+        <br></br>
         <h5 class="card-title">V1</h5>
         <p class="project-text" style="text-indent: 2em;">
           <img src="/images/projects/onewheel/onewheel_v1.webp" class="img-fluid rounded shadow float-end me-3 ms-3" style="max-width: 300px;" alt="onewheel_v1">
-          My first battery, lets call this v1, was a 14s3p INR21700M50LT pack. I had no expierence building onewheel batteries at 
-          this time and wasfairly disconnected with the aftermarket community. To summarize this battery was a disaster waiting 
+          My first battery, lets call this v1, was a 14s3p INR21700M50LT pack. I had no expierence building onewheel batteries 
+          (or batteries at all) and was fairly disconnected with the aftermarket community. To summarize this battery was a disaster waiting 
           to happen. In order to fit this many cells in the frame I had to put the BMS on top of the battery box, in the footpad. 
           The first thing to fail on this build was the welds. I used a cheap battery spot welder and had no prior expierence 
           building batteries so my connections were weak. 
@@ -64,29 +66,29 @@
             disecting this battery I found several loose welds likely to have caused the cell's voltage drops.
         </p>
 
+        <br></br>
         <h5 class="card-title">V2</h5>
         <p class="project-text" style="text-indent: 2em;">
           After a bit more research I started planning my next battery build. This was a 14s2p pack using Molicel P42B's. For the 
           BMS I used a Daly 14s smart bms. I had also upgraded to a Glitter 801D spot welder for much stronger welds. I used 0.2mm 
           nickel strips for all welds. The first falure of this build was a cell going out of balance. Since it was cell 14, the
-          last in the string I simply replaced that cell. I also swapped my bms to a JBD 12-17s smart BMS for better active balance.
+          last in the string, I simply replaced that parallel group with extra cells I had on hand. I also swapped my bms to a JBD 12-17s smart BMS for better active balance.
         </p>
         
-        <p class="project-text" style="text-indent: 2em;">
-          <img src="../images/projects/onewheel/v2dally.webp" class="img-fluid rounded shadow float-start me-3 ms-3" style="max-width: 300px;" alt="v2 w Dally BMS">
-          The main flaws on this build can be seen in the above picture.
-        </p>
 
-        <ul class="project-list">
-          <li class="project-text" style="text-indent: 2em;">Easily the biggest mistake was not using any fish paper.</li>
-          <li class="project-text" style="text-indent: 2em;">Weak physical build.</li>
-          <li class="project-text" style="text-indent: 2em;">Poor routing of balance lines.</li>
-        </ul>
+        <img src="../images/projects/onewheel/v2dally.webp" class="img-fluid rounded shadow float-start me-4 ms-3" style="max-width: 300px;" alt="v2 w Dally BMS">
+        <img src="../images/projects/onewheel/v2badcell.webp" class="img-fluid rounded shadow float-end me-3 ms-3" style="max-width: 300px;" alt="v2 w Dally BMS">
+        <p class="project-text" style="text-indent: 2em;">
+          There were a few major things I did wrong on this build: I did not use any fishpaper, I used a charge/discharge BMS, 
+          and the balance wire were routed very poorly.
+        </p>
+        
+      
         
         <p class="project-text" style="text-indent: 2em;">
-          Since I was still new to battery building I was not aware of teh importance of fish paper. I placed the cells tight 
-          to each other, using only the welds to bind them until I taped them all together. While this seemed to work it was 
-          difficult to assemble and not prepared for the vigorous vibrations of onewheeling. One of my theories of the cause
+          Since I was still new to battery building I was not aware of the importance of fish paper. I placed the cells tight 
+          to each other, using only the welds to bind them until I taped them all together. While this seemed to work, it was 
+          difficult to assemble and not properly designed for the vigorous vibrations of onewheeling. One of my theories of the cause
           of v2's second bad cell and ultimate falure was the lack of fish paper. Several cells showed signs of corrosion,
           and a few had parts where the nickel strips had worn through the battery heat shrink making contact with the metal 
           of the cell.
@@ -96,17 +98,23 @@
           other many times. In a tight build like a onewheel this could cause a short over time with many vibrations.
         </p>
 
+        <br></br>
         <h5 class="card-title">Vesc</h5>
         <p class="project-text" style="text-indent: 2em;">
           <img src="../images/projects/onewheel/v2focerinside.webp" class="img-fluid rounded shadow float-end me-3 ms-3" style="max-width: 300px;" alt="Focer Version 1">
           The next upgrade to my board was replacing the original onewheel plus controller with a Little Focer 3.1 Vesc
-          compatible ESC. The Focer came in a kit and was fairly strait forward to install. I 3d printed a box using high
-          speed TPU. I decied on HS-TPU since it wouldn't crack under heavy and constant vibrations. There were a few 
-          aspects of this conversion I was not satisfied with at the end. The main was the main connector from the battery
+          compatible ESC. The Focer came in a kit and was fairly straight forward to install. I 3d printed a box using high
+          speed TPU. I decided on HS-TPU since it wouldn't crack under heavy and constant vibrations. I switched the wiring 
+          in the battery box so that the BMS acted as a charge only BMS, making it so the Focer pulled power straight from the 
+          battery. This created no risk of the BMS dropping the board if thinks there is a problem (this happened to me once). 
+          The BMS also does not need to carry near as much current in this configuration. </p>
+          <p class="project-text" style="text-indent: 2em;">
+          There were a few 
+          aspects of this conversion I was not satisfied with at the end. The main was the large connector from the battery
           box to the controller box. It is a 16-pin plug that carries battery current (charge and discharge) and rear LED
           signal and power. The connector fits loosly and has a easily breakable clip to hold it in place that left me
           feeling a bit un comfortable. Similarly the motor cable was an almost identical 6 pin connector that I had the 
-          same feelings for. The other part I did not love about this design was the TPU box while it never did
+          same feelings for. The other part I did not love about this design was the TPU box, while it never did
           crack it was too flexible and felt like it never created a reliable water seal around the connectors.  
         </p>
         
@@ -116,56 +124,70 @@
         <p class="project-text" style="text-indent: 2em;">
           After I graduated School I embarked on yet another board renevation, and the biggest yet. The main goal was to
           upgrade to an 18s2p pack from my 14s2p pack that was having yet another out of balance cell. This time I was 
-          determined to do everything right and not have any more battery issues. On this rebuild I:
+          determined to do everything right and not have any more battery issues. On this rebuild I did three major upgrades:
         </p>
         <ul class="project-list">
-          <li class="project-text" style="text-indent: 2em;">
+          <li class="project-text">
             <img src="../images/projects/onewheel/batteryV3.webp" class="img-fluid rounded shadow float-end me-3 ms-3" style="max-width: 300px;" alt="Focer Version 2">
-            Rebuilt my 14s2p pack of Molicel P42Bs into a 18s2p pack using
+            I rebuilt my 14s2p pack of Molicel P42Bs into a 18s2p pack using
             16 original cells. I capacity tested all 28 original cells and selected the best 16 to use on the new pack. All of
             the reused cells tested over 3700mAh. I paired each used cell with a new P42B for a parallel group and had two
             fully new parallel groups (cell 1 and 18). I used fishpaper tabs on the positive end of every cell and 70mm paper
             between every cells that touched the next cell in series. One of my favorite new additions to this pack was the use
-            of custom cut nickel from <a href="https://theboardgarage.com/" target="_blank">theboardgarage</a>. See my pictures
-            below of my welds and how I built this pack.
+            of custom cut nickel from <a href="https://theboardgarage.com/" target="_blank">theboardgarage</a>. I used a new 
+            BMS yet again for this pack but this time a common one for onewheel batteries, the <a href="https://www.ennoid.me/bms
+            /xlite-v4">ENNOID XLITE-X4-24</a>. This is a 13-24s charge only smart BMS. It has CAN-bus that can connect to Focer
+            for live cell data in the same app as I use for everything else (Floaty and VescTool). See my pictures below of my welds and my cell configuration.
           </li>
-          <li class="project-text" style="text-indent: 2em;">
+          <li class="project-text">
             <img src="../images/projects/onewheel/MotorReterminatePro.webp" class="img-fluid rounded shadow float-end me-3 ms-3" style="max-width: 300px;" alt="Focer Version 2">
-            Upgraded motor cable and plug to a superflux connector from <a href="https://fungineers.us/products/superflux-motor-
+            I upgraded the motor cable and plug to a superflux connector from <a href="https://fungineers.us/products/superflux-motor-
             connector-male-for-non-mkii-motors?pr_prod_strat=jac&pr_rec_id=0c9ffcdef&pr_rec_pid=8153271828642&pr_ref_pid=8123997
             683874&pr_seq=uniform" target="_blank">Fungineers</a>. This involved taking the rotor and stator apart from each
             other and de-soldering the old cable from the hall sensor and phase wires, then inserting the new wire and
             resoldering the connections. This is all much easier said then done. There was some adhesive sealant in the axle sealing
-            around the connector I had to cut out and reseal that because quite the ordeal. The result was very worthwhile as it 
-            replaced a loose 6 pin connector and a separate hall sensor connector, with a screw on sturdy build 3+7 pin connector. 
+            around the connector I had to cut out and reseal that became quite the ordeal. The result was very worthwhile as it 
+            replaced a loose 6 pin connector and a separate hall sensor connector, with a single, screw-on, sturdy built 3+7 pin connector. 
             (3 heavy pins for phase and 7 data pins for hall etc).
           </li>
-          <li class="project-text" style="text-indent: 2em;">
+          <li class="project-text">
             <img src="../images/projects/onewheel/v3focerintside.webp" class="img-fluid rounded shadow float-end me-3 ms-3" style="max-width: 300px;" alt="Focer Version 2">
             The last part of this rebuild was the CNC'd XR Pub box that I was lucky enough to get my hands on for about $140. (There 
-            was a group buy going on the the vescify discord and a close friend of mine signed me up to get one!) This box came with
+            was a group buy going on the the <a href="https://discord.gg/KetrHVKbV" target="_blank">vescify discord </a>and a close 
+            friend of mine signed me up to get one!) This box came with
             all new connectors (except the superflux which I bought from fungineers). One of the big advantages of this box was that
             it is aluminium so the esc can mount to the bottom instead of the lid like before and use the entire box as a heat sink.
           </li>  
         </ul>
         <p class="project-text" style="text-indent: 2em;">
-          There are a few other smaller aspects, lights, fender and footpads that I updgraded on this version. The lights I still
-          as of 10/9/25 have not fully got working. The partial fenders that I had 3d printed broke and I will likely just buy 
-          the drop top from TFL. My foot pads I printed with HS-TPU and used trail grip tape from TFL.
+          There are a few other smaller aspects, lights, fender and footpads that I updgraded on this version. The lights I still,
+          as of 10/9/25 have not fully got working. The partial fenders that I had 3d printed, broke and I will likely just buy 
+          the drop top from <a href="https://thefloatlife.com/">TFL</a> My foot pads I printed with HS-TPU and used trail grip 
+          tape from <a href="https://thefloatlife.com/">TFL</a>.
         </p>
         <p class="project-text" style="text-indent: 2em;">
           At this point I have an original future motion motor and rails. Everything else is aftermarket. A few resources I used
           for this build are:
         </p>
         <ul class="project-list">
-          <li class="project-text" style="text-indent: 2em;">
+          <li class="project-text">
             The <a href="https://discord.gg/KetrHVKbV" target="_blank">Vescify</a> discord is an extremly helpful place for all things
-            custom onewheel. I highly reccomend joining it if you plan to do anything yourself.
+            custom onewheel. I highly recommend joining it if you plan to do anything yourself.
           </li>
-          <li class="project-text" style="text-indent: 2em;"><a href="https://theboardgarage.com/" target="_blank">Theboardgarage</a>
+          <li class="project-text"><a href="https://theboardgarage.com/" target="_blank">Theboardgarage.</a>
             There are several very helpful posts on this site showing battery builds and helpful information for when building.
           </li>
         </ul>
+
+        <p class="project-text" style="text-indent: 2em;">
+          Now that I have finished I'll give some reflections. My total amount spent in parts that are still on the board, or 
+          were not resellable or reusable, probably sits in the ball park of a Onewheel GT or my preferred the 
+          <a href="https://fungineers.us/products/funwheel-x7">Fungineers X7</a> or Floatwheel's 
+          <a href="https://floatwheel.co/index.php?route=product/product&product_id=9904">ADV2</a>. My board would to the best of
+          my knoledge out-torque the GT but be fairly comparable to the X7 or ADV. Looking back, if I just wanted a high-speed, high-torque 
+          onewheel I would buy a Fungineers X7 Long Range. If I wanted a project and to learn I would build another board but from scratch,
+          using a superflux motor from Fungineers and WTF rails from TFL. (Instead of the two remaining future motion parts I have on my board).
+        </p>
 
           
         
@@ -182,21 +204,92 @@
     </div>
 
     <!-- More images -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> <!--For Opening Images-->
     <div class="row">
 
       <div class="col-md-4 mb-4">
-        <a href="../images/projects/onewheel/v2closed.webp">
-            <img src="../images/projects/onewheel/v2closed.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 1">
+        <a href="../images/projects/onewheel/V3Ollie.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/V3Ollie.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 1">
         </a>
-      
       </div>
+
       <div class="col-md-4 mb-4">
-        <a href="../images/projects/onewheel/Spotwelds1.webp">
-            <img src="../images/projects/onewheel/Spotwelds1.webp" class="img-fluid rounded shadow project-image" alt="Screenshot 1">
+        <a href="../images/projects/onewheel/v2focerinside.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/v2focerinside.webp" class="img-fluid rounded shadow project-image" alt="v2 focer inside controller box">
         </a>
-      
       </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/v2Focer.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/v2Focer.webp" class="img-fluid rounded shadow project-image" alt="v2Focer">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/Spotwelds1.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/Spotwelds1.webp" class="img-fluid rounded shadow project-image" alt="Spotwelds1">
+        </a>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/spotwelds2.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/spotwelds2.webp" class="img-fluid rounded shadow project-image" alt="spotwelds2">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/Spotwelds3.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/Spotwelds3.webp" class="img-fluid rounded shadow project-image" alt="Spotwelds3">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/spotwelds4.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/spotwelds4.webp" class="img-fluid rounded shadow project-image" alt="Sspotwelds4">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/batterybox.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/batterybox.webp" class="img-fluid rounded shadow project-image" alt="batterybox">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/batteryV3.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/batteryV3.webp" class="img-fluid rounded shadow project-image" alt="batteryV3">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/motorReterminate2.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/motorReterminate2.webp" class="img-fluid rounded shadow project-image" alt="motorReterminate2">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/MotorReterminatePro.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/MotorReterminatePro.webp" class="img-fluid rounded shadow project-image" alt="SMotorReterminatePro">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/MotorReterminate1.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/MotorReterminate1.webp" class="img-fluid rounded shadow project-image" alt="MotorReterminate1">
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="../images/projects/onewheel/v3focerintside.webp" data-lightbox="mygallery">
+            <img src="../images/projects/onewheel/v3focerintside.webp" class="img-fluid rounded shadow project-image" alt="v3 focer inside controller box">
+        </a>
+      </div>
+
     </div>
+
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js">
+  </script>
   </div>
 
 
